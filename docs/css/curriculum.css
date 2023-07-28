@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem; /* 14px */
+  line-height: 2.2rem; /* 22px */
+  font-family: "Montserrat", sans-serif;
+  background: #585c68;
+  color: #555555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem; /* 20px */
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.6rem; /* 16px */
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 2rem; /* 20px */
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 1.6rem; /* 16px */
+}
+
+.resume {
+  width: 80rem; /* 800px */
+  max-width: 100%;
+  margin: 5rem auto; /* 50px */
+  display: flex;
+}
+
+.resume_left {
+  width: 28rem; /* 280px */
+  background: #940e09;
+}
+
+.resume_left .resume_profile {
+  width: 100%;
+  height: 28rem; /* 280px */
+}
+
+.resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume_left .resume_content {
+  padding: 0 2.5rem; /* 25px */
+}
+
+.title {
+  margin-bottom: 2rem; /* 20px */
+}
+
+.resume_left .bold {
+  color: #fff;
+}
+
+.resume_left .regular {
+  color: #9e0e09;
+}
+
+.resume_item {
+  padding: 2.5rem 0; /* 25px */
+  border-bottom: 0.2rem solid #b1eaff;
+}
+
+.resume_left .resume_item:last-child,
+.resume_right .resume_item:last-child {
+  border-bottom: none;
+}
+
+.resume_left ul li {
+  display: flex;
+  margin-bottom: 1rem; /* 10px */
+  align-items: center;
+}
+
+.resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume_left ul li .icon {
+  width: 3.5rem; /* 35px */
+  height: 3.5rem; /* 35px */
+  background: #fff;
+  color: #da1313;
+  border-radius: 50%;
+  margin-right: 1.5rem; /* 15px */
+  font-size: 1.6rem; /* 16px */
+  position: relative;
+}
+
+.icon i,
+.resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 1rem; /* 10px */
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 0.5rem; /* 5px */
+  height: 0.5rem; /* 5px */
+  background: #e00b0b;
+  position: relative;
+}
+
+.resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 0.3rem; /* 3px */
+}
+
+.resume_right {
+  flex: 1;
+  background: #fff;
+  padding: 2.5rem; /* 25px */
+}
+
+.resume_right .bold {
+  color: #d31111;
+}
+
+.resume_right .resume_work ul,
+.resume_right .resume_education ul {
+  padding-left: 4rem; /* 40px */
+  overflow: hidden;
+}
+
+.resume_right ul li {
+  position: relative;
+}
+
+.resume_right ul li .date {
+  font-size: 1.6rem; /* 16px */
+  font-weight: 500;
+  margin-bottom: 1.5rem; /* 15px */
+}
+
+.resume_right ul li .info {
+  margin-bottom: 2rem; /* 20px */
+}
+
+.resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+
+
+
+
+.resume_right .resume_hobby ul {
+  display: flex;
+}
+
+.resume_right .resume_hobby ul li {
+  width: 8rem; /* 80px */
+  height: 8rem; /* 80px */
+  border: 0.2rem solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume_right .resume_hobby ul li i {
+  font-size: 3rem; /* 30px */
+}
+
+
+.resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+
+
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
+
+.resume_skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume_skills ul li {
+  display: flex;
+  margin-bottom: 1rem; /* 10px */
+  color: #531212;
+}
+
+.resume_skills .skill_name {
+  width: 25%;
+}
+
+.resume_skills .skill_progress {
+  width: 60%;
+  margin: 0 0.5rem; /* 5px */
+  height: 0.5rem; /* 5px */
+  background: #e9ebf0;
+  position: relative;
+}
+
+.resume_skills .skill_per {
+  width: 15%;
+}
+
+.resume_skills .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #db1305;
+}
